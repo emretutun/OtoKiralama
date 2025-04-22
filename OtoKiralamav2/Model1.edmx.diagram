@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c28d27fdb66f48caa24a40220aa9f97b" Name="Diagram1">
+        <EntityTypeShape EntityType="OtoKiralamav2Model.sysdiagrams" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLARAC" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLÇEKSENET" Width="1.5" PointX="2.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLFIRMAODEME" Width="1.5" PointX="5.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLFİRMA" Width="1.5" PointX="7.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLFirmaUrun" Width="1.5" PointX="10" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLGELİR" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLGIRIS" Width="1.5" PointX="4.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLGİDER" Width="1.5" PointX="12.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLGÜNLÜKHARCAMA" Width="1.5" PointX="12.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLHATIRLATMA" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLKASA" Width="1.5" PointX="0.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLKASACIKIS" Width="1.5" PointX="6.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLKATEGORI" Width="1.5" PointX="5.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLKIRA" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLKİRA" Width="1.5" PointX="10" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLMARKA" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLMODEL" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLMUSTERİ" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLPERSODEME" Width="1.5" PointX="13" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLPERSONEL" Width="1.5" PointX="10.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLREZERVASYON" Width="1.5" PointX="7.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLSATISLAR" Width="1.5" PointX="14.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtoKiralamav2Model.TBLURUN" Width="1.5" PointX="8" PointY="6" IsExpanded="true" />
+        <AssociationConnector Association="OtoKiralamav2Model.FK_TBLARAC_TBLMARKA" ManuallyRouted="false" />
+        <AssociationConnector Association="OtoKiralamav2Model.FK_TBLARAC_TBLMODEL" ManuallyRouted="false" />
+        <AssociationConnector Association="OtoKiralamav2Model.FK_TBLKIRA_TBLARAC" ManuallyRouted="false" />
+        <AssociationConnector Association="OtoKiralamav2Model.FK_TBLURUN_TBLFIRMAODEME" ManuallyRouted="false" />
+        <AssociationConnector Association="OtoKiralamav2Model.FK_TBLFirmaUrun_TBLFİRMA" ManuallyRouted="false" />
+        <AssociationConnector Association="OtoKiralamav2Model.FK_TBLURUN_TBLKATEGORI" ManuallyRouted="false" />
+        <AssociationConnector Association="OtoKiralamav2Model.FK_TBLKIRA_TBLMARKA" ManuallyRouted="false" />
+        <AssociationConnector Association="OtoKiralamav2Model.FK_TBLKIRA_TBLMODEL" ManuallyRouted="false" />
+        <AssociationConnector Association="OtoKiralamav2Model.FK_TBLKIRA_TBLMUSTERİ" ManuallyRouted="false" />
+        <AssociationConnector Association="OtoKiralamav2Model.FK_TBLKİRA_TBLREZERVASYON" ManuallyRouted="false" />
+        <AssociationConnector Association="OtoKiralamav2Model.FK_TBLPERSODEME_TBLPERSONEL" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

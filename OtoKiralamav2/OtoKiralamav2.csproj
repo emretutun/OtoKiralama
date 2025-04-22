@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9AEC6799-AE1E-4E0B-8867-530F95C808E5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OtoKiralamav2</RootNamespace>
+    <AssemblyName>OtoKiralamav2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraWizard.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aracı Kiraya ver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aracı Kiraya ver.Designer.cs">
+      <DependentUpon>Aracı Kiraya ver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Araç Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Araç Ekle.Designer.cs">
+      <DependentUpon>Araç Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Araç Kiralama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Araç Kiralama.Designer.cs">
+      <DependentUpon>Araç Kiralama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Araç.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Araç.Designer.cs">
+      <DependentUpon>Araç.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CekSenet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CekSenet.Designer.cs">
+      <DependentUpon>CekSenet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CEKSENETKAYIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CEKSENETKAYIT.Designer.cs">
+      <DependentUpon>CEKSENETKAYIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firma Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma Ekle.Designer.cs">
+      <DependentUpon>Firma Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma.Designer.cs">
+      <DependentUpon>Firma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKayit.Designer.cs">
+      <DependentUpon>FormKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GelirEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GelirEkle.Designer.cs">
+      <DependentUpon>GelirEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiderEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiderEkle.Designer.cs">
+      <DependentUpon>GiderEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Günlük Harcama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Günlük Harcama.Designer.cs">
+      <DependentUpon>Günlük Harcama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Harcama Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Harcama Ekle.Designer.cs">
+      <DependentUpon>Harcama Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hatırlatma Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hatırlatma Ekle.Designer.cs">
+      <DependentUpon>Hatırlatma Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hatırlatma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hatırlatma.Designer.cs">
+      <DependentUpon>Hatırlatma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasa.Designer.cs">
+      <DependentUpon>Kasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KasaYedek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KasaYedek.Designer.cs">
+      <DependentUpon>KasaYedek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kiralama2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kiralama2.Designer.cs">
+      <DependentUpon>Kiralama2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mesaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mesaj.Designer.cs">
+      <DependentUpon>Mesaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Muhasebe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Muhasebe.Designer.cs">
+      <DependentUpon>Muhasebe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri.Designer.cs">
+      <DependentUpon>Musteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri2.Designer.cs">
+      <DependentUpon>Musteri2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Müşteri Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Müşteri Ekle.Designer.cs">
+      <DependentUpon>Müşteri Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Müşteri Güncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Müşteri Güncelle.Designer.cs">
+      <DependentUpon>Müşteri Güncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Para Girişi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Para Girişi.Designer.cs">
+      <DependentUpon>Para Girişi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Para Çıkışı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Para Çıkışı.Designer.cs">
+      <DependentUpon>Para Çıkışı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="persmaasode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="persmaasode.Designer.cs">
+      <DependentUpon>persmaasode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel Ekle.Designer.cs">
+      <DependentUpon>Personel Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel Güncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel Güncelle.Designer.cs">
+      <DependentUpon>Personel Güncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel.Designer.cs">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelAracVer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelAracVer.Designer.cs">
+      <DependentUpon>PersonelAracVer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stok Giriş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stok Giriş.Designer.cs">
+      <DependentUpon>Stok Giriş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STOK.Designer.cs">
+      <DependentUpon>STOK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokEkle.Designer.cs">
+      <DependentUpon>StokEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLARAC.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLFIRMAODEME.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLFirmaUrun.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLFİRMA.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLGELİR.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLGIRIS.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLGÜNLÜKHARCAMA.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLGİDER.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLHATIRLATMA.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLKASA.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLKASACIKIS.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLKATEGORI.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLKIRA.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLKİRA.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLMARKA.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLMODEL.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLMUSTERİ.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLPERSODEME.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLPERSONEL.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLREZERVASYON.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLSATISLAR.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLURUN.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLÇEKSENET.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Çek Senet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Çek Senet.Designer.cs">
+      <DependentUpon>Çek Senet.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Aracı Kiraya ver.resx">
+      <DependentUpon>Aracı Kiraya ver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Araç Ekle.resx">
+      <DependentUpon>Araç Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Araç Kiralama.resx">
+      <DependentUpon>Araç Kiralama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Araç.resx">
+      <DependentUpon>Araç.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CekSenet.resx">
+      <DependentUpon>CekSenet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CEKSENETKAYIT.resx">
+      <DependentUpon>CEKSENETKAYIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firma Ekle.resx">
+      <DependentUpon>Firma Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firma.resx">
+      <DependentUpon>Firma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKayit.resx">
+      <DependentUpon>FormKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GelirEkle.resx">
+      <DependentUpon>GelirEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiderEkle.resx">
+      <DependentUpon>GiderEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Günlük Harcama.resx">
+      <DependentUpon>Günlük Harcama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Harcama Ekle.resx">
+      <DependentUpon>Harcama Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hatırlatma Ekle.resx">
+      <DependentUpon>Hatırlatma Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hatırlatma.resx">
+      <DependentUpon>Hatırlatma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasa.resx">
+      <DependentUpon>Kasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KasaYedek.resx">
+      <DependentUpon>KasaYedek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kiralama2.resx">
+      <DependentUpon>Kiralama2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mesaj.resx">
+      <DependentUpon>Mesaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Muhasebe.resx">
+      <DependentUpon>Muhasebe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri.resx">
+      <DependentUpon>Musteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri2.resx">
+      <DependentUpon>Musteri2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Müşteri Ekle.resx">
+      <DependentUpon>Müşteri Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Müşteri Güncelle.resx">
+      <DependentUpon>Müşteri Güncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Para Girişi.resx">
+      <DependentUpon>Para Girişi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Para Çıkışı.resx">
+      <DependentUpon>Para Çıkışı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="persmaasode.resx">
+      <DependentUpon>persmaasode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel Ekle.resx">
+      <DependentUpon>Personel Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel Güncelle.resx">
+      <DependentUpon>Personel Güncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel.resx">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelAracVer.resx">
+      <DependentUpon>PersonelAracVer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Stok Giriş.resx">
+      <DependentUpon>Stok Giriş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STOK.resx">
+      <DependentUpon>STOK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokEkle.resx">
+      <DependentUpon>StokEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Çek Senet.resx">
+      <DependentUpon>Çek Senet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
