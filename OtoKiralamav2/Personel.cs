@@ -240,7 +240,7 @@ namespace OtoKiralamav2
             }
 
             // Eğer arac null değilse, resmi yükle
-            string resimYolu = Path.Combine(@"C:\OtoKiralamav2\OtoKiralamav2\bin\Debug\Resimler", arac.Resim);
+            string resimYolu = Path.Combine(@"C:\projeSon\OtoKiralamav2\bin\Debug\Resimler", arac.Resim);
 
             // Resim dosyasının var olup olmadığını kontrol et
             if (File.Exists(resimYolu))

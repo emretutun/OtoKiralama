@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="c28d27fdb66f48caa24a40220aa9f97b" Name="Diagram1">
+      <Diagram DiagramId="c28d27fdb66f48caa24a40220aa9f97b" Name="Diagram1" ZoomLevel="50">
         <EntityTypeShape EntityType="OtoKiralamav2Model.sysdiagrams" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
         <EntityTypeShape EntityType="OtoKiralamav2Model.TBLARAC" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="OtoKiralamav2Model.TBLÇEKSENET" Width="1.5" PointX="2.75" PointY="10.75" IsExpanded="true" />

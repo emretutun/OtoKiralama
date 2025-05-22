@@ -98,7 +98,7 @@ namespace OtoKiralamav2
             TBLKASA ksa = new TBLKASA();
             ksa.işlem = "Kiralama";
             ksa.Tarih = dateTimePicker1.Value;
-            ksa.Ad = "Erkan İnan";
+            ksa.Ad = "Emre Tütün";
             ksa.Acıklama = "Araç Kiraya Verildi";
             ksa.Miktar = Convert.ToDecimal(txtkiraucret.Text);
             db.TBLKASA.Add(ksa);
